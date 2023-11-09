@@ -1,0 +1,35 @@
+name: Tests
+
+on: [ push, pull_request ]
+
+permissions: read-all
+
+jobs:
+    laravel:
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: true
+            matrix:
+                php: [ "8.1", "8.2" ]
+                laravel: [ "10.0" ]
+                prefer: [ "stable", "lowest" ]
+
+        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }} ${{ matrix.prefer }}
+
+        steps:
+            -   name: Checkout code
+                uses: actions/checkout@v4
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php }}
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv
+                    coverage: xdebug
+
+            -   name: Install dependencies
+                run: composer require laravel/framework:^${{ matrix.laravel }} --prefer-${{ matrix.prefer }}
+
+            -   name: Execute tests
+                run: vendor/bin/pest
