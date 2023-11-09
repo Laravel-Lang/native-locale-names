@@ -25,7 +25,7 @@ class Native
         return Arr::ofFile($path)->toArray();
     }
 
-    protected static function path(Locale|string|null $locale = null): string|bool
+    protected static function path(Locale|string|null $locale = null): bool|string
     {
         return realpath(__DIR__ . '/../locales/' . static::locale($locale) . '/php.json');
     }
