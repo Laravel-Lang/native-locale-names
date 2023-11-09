@@ -7,32 +7,17 @@
 [![Total Downloads][badge_downloads]][link_packagist]
 [![License][badge_license]][link_license]
 
-## Installation
+## Documentation
 
-To get the latest version of `Native Locale Names` library, simply require the project using [Composer](https://getcomposer.org):
+See the [documentation](https://laravel-lang.com) for detailed installation and [usage](https://laravel-lang.com/usage/features/native-locale-names.html) instructions.
 
-```
-$ composer require laravel-lang/native-locale-names
-```
+## Contributing
 
-Instead, you may of course manually update your `require` block and run `composer update` if you so choose:
+Please see [CONTRIBUTING](https://laravel-lang.com/contributing.html) for details.
 
-```json
-{
-    "require": {
-        "laravel-lang/native-locale-names": "^1.0"
-    }
-}
-```
+## License
 
-## Using
-
-To install files from this repository into your project, you need to install the [laravel-lang/publisher](https://github.com/Laravel-Lang/publisher)
-version `^14.0` and above.
-
-Yes, that's all 😊
-
-Now the package is connected to your application and you can [manage localizations](https://laravel-lang.github.io/publisher/using).
+This package is licensed under the [MIT License][link_license].
 
 
 [badge_stable]:     https://img.shields.io/github/v/release/Laravel-Lang/native-locale-names?label=stable&style=flat-square
