@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# fr
+# ro
 
-##### All missed: 13
+##### All missed: 15
 
 
 ### php
 
-##### Missing: 13
+##### Missing: 15
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,11 +32,11 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
+ar
 
 </td><td width="50%">
 
-Bengali
+Arabic
 
 </td></tr>
 <tr><td width="50%">
@@ -50,11 +50,11 @@ Catalan
 </td></tr>
 <tr><td width="50%">
 
-eu
+gl
 
 </td><td width="50%">
 
-Basque
+Galician
 
 </td></tr>
 <tr><td width="50%">
@@ -77,11 +77,11 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-kk
+ka
 
 </td><td width="50%">
 
-Kazakh
+Georgian
 
 </td></tr>
 <tr><td width="50%">
@@ -113,11 +113,20 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-oc
+ps
 
 </td><td width="50%">
 
-Occitan
+Pashto
+
+</td></tr>
+<tr><td width="50%">
+
+si
+
+</td><td width="50%">
+
+Sinhala
 
 </td></tr>
 <tr><td width="50%">
@@ -136,6 +145,15 @@ tl
 </td><td width="50%">
 
 Tagalog
+
+</td></tr>
+<tr><td width="50%">
+
+ur
+
+</td><td width="50%">
+
+Urdu
 
 </td></tr>
 </table>

@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# fr
+# ms
 
-##### All missed: 13
+##### All missed: 18
 
 
 ### php
 
-##### Missing: 13
+##### Missing: 18
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,20 +32,29 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
 ca
 
 </td><td width="50%">
 
 Catalan
+
+</td></tr>
+<tr><td width="50%">
+
+da
+
+</td><td width="50%">
+
+Danish
+
+</td></tr>
+<tr><td width="50%">
+
+de_CH
+
+</td><td width="50%">
+
+Swiss High German
 
 </td></tr>
 <tr><td width="50%">
@@ -59,15 +68,6 @@ Basque
 </td></tr>
 <tr><td width="50%">
 
-gu
-
-</td><td width="50%">
-
-Gujarati
-
-</td></tr>
-<tr><td width="50%">
-
 hi
 
 </td><td width="50%">
@@ -77,11 +77,11 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-kk
+ka
 
 </td><td width="50%">
 
-Kazakh
+Georgian
 
 </td></tr>
 <tr><td width="50%">
@@ -122,20 +122,65 @@ Occitan
 </td></tr>
 <tr><td width="50%">
 
-sw
+ps
 
 </td><td width="50%">
 
-Swahili
+Pashto
 
 </td></tr>
 <tr><td width="50%">
 
-tl
+si
 
 </td><td width="50%">
 
-Tagalog
+Sinhala
+
+</td></tr>
+<tr><td width="50%">
+
+tg
+
+</td><td width="50%">
+
+Tajik (Cyrillic)
+
+</td></tr>
+<tr><td width="50%">
+
+th
+
+</td><td width="50%">
+
+Thai
+
+</td></tr>
+<tr><td width="50%">
+
+ug
+
+</td><td width="50%">
+
+Uyghur
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Cyrl
+
+</td><td width="50%">
+
+Uzbek (Cyrillic)
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Latn
+
+</td><td width="50%">
+
+Uzbek (Latin)
 
 </td></tr>
 </table>

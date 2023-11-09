@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# fr
+# sq
 
-##### All missed: 13
+##### All missed: 9
 
 
 ### php
 
-##### Missing: 13
+##### Missing: 9
 
 <table width="100%">
 <tr><th width="50%">
@@ -23,47 +23,11 @@ Value
 </th></tr>
 <tr><td width="50%">
 
-af
+gl
 
 </td><td width="50%">
 
-Afrikaans
-
-</td></tr>
-<tr><td width="50%">
-
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
-ca
-
-</td><td width="50%">
-
-Catalan
-
-</td></tr>
-<tr><td width="50%">
-
-eu
-
-</td><td width="50%">
-
-Basque
-
-</td></tr>
-<tr><td width="50%">
-
-gu
-
-</td><td width="50%">
-
-Gujarati
+Galician
 
 </td></tr>
 <tr><td width="50%">
@@ -77,29 +41,11 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-kk
-
-</td><td width="50%">
-
-Kazakh
-
-</td></tr>
-<tr><td width="50%">
-
 km
 
 </td><td width="50%">
 
 Khmer
-
-</td></tr>
-<tr><td width="50%">
-
-kn
-
-</td><td width="50%">
-
-Kannada
 
 </td></tr>
 <tr><td width="50%">
@@ -113,29 +59,47 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-oc
+ms
 
 </td><td width="50%">
 
-Occitan
+Malay
 
 </td></tr>
 <tr><td width="50%">
 
-sw
+ps
 
 </td><td width="50%">
 
-Swahili
+Pashto
 
 </td></tr>
 <tr><td width="50%">
 
-tl
+th
 
 </td><td width="50%">
 
-Tagalog
+Thai
+
+</td></tr>
+<tr><td width="50%">
+
+tk
+
+</td><td width="50%">
+
+Turkmen
+
+</td></tr>
+<tr><td width="50%">
+
+ur
+
+</td><td width="50%">
+
+Urdu
 
 </td></tr>
 </table>

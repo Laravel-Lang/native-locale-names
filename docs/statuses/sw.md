@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# de
+# sw
 
-##### All missed: 10
+##### All missed: 6
 
 
 ### php
 
-##### Missing: 10
+##### Missing: 6
 
 <table width="100%">
 <tr><th width="50%">
@@ -23,38 +23,11 @@ Value
 </th></tr>
 <tr><td width="50%">
 
-af
+kk
 
 </td><td width="50%">
 
-Afrikaans
-
-</td></tr>
-<tr><td width="50%">
-
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
-gu
-
-</td><td width="50%">
-
-Gujarati
-
-</td></tr>
-<tr><td width="50%">
-
-hi
-
-</td><td width="50%">
-
-Hindi
+Kazakh
 
 </td></tr>
 <tr><td width="50%">
@@ -68,15 +41,6 @@ Khmer
 </td></tr>
 <tr><td width="50%">
 
-kn
-
-</td><td width="50%">
-
-Kannada
-
-</td></tr>
-<tr><td width="50%">
-
 mr
 
 </td><td width="50%">
@@ -86,29 +50,29 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-ne
+sc
 
 </td><td width="50%">
 
-Nepali
+Sardinian
 
 </td></tr>
 <tr><td width="50%">
 
-tl
+th
 
 </td><td width="50%">
 
-Tagalog
+Thai
 
 </td></tr>
 <tr><td width="50%">
 
-ur
+ug
 
 </td><td width="50%">
 
-Urdu
+Uyghur
 
 </td></tr>
 </table>

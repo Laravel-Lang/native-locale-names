@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# fr
+# id
 
-##### All missed: 13
+##### All missed: 11
 
 
 ### php
 
-##### Missing: 13
+##### Missing: 11
 
 <table width="100%">
 <tr><th width="50%">
@@ -21,33 +21,6 @@ Key
 Value
 
 </th></tr>
-<tr><td width="50%">
-
-af
-
-</td><td width="50%">
-
-Afrikaans
-
-</td></tr>
-<tr><td width="50%">
-
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
-ca
-
-</td><td width="50%">
-
-Catalan
-
-</td></tr>
 <tr><td width="50%">
 
 eu
@@ -113,11 +86,11 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-oc
+si
 
 </td><td width="50%">
 
-Occitan
+Sinhala
 
 </td></tr>
 <tr><td width="50%">
@@ -131,11 +104,20 @@ Swahili
 </td></tr>
 <tr><td width="50%">
 
-tl
+th
 
 </td><td width="50%">
 
-Tagalog
+Thai
+
+</td></tr>
+<tr><td width="50%">
+
+ug
+
+</td><td width="50%">
+
+Uyghur
 
 </td></tr>
 </table>

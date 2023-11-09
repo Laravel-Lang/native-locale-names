@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# de
+# az
 
-##### All missed: 10
+##### All missed: 6
 
 
 ### php
 
-##### Missing: 10
+##### Missing: 6
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,42 +32,6 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
-gu
-
-</td><td width="50%">
-
-Gujarati
-
-</td></tr>
-<tr><td width="50%">
-
-hi
-
-</td><td width="50%">
-
-Hindi
-
-</td></tr>
-<tr><td width="50%">
-
-km
-
-</td><td width="50%">
-
-Khmer
-
-</td></tr>
-<tr><td width="50%">
-
 kn
 
 </td><td width="50%">
@@ -77,29 +41,29 @@ Kannada
 </td></tr>
 <tr><td width="50%">
 
-mr
+ms
 
 </td><td width="50%">
 
-Marathi
+Malay
 
 </td></tr>
 <tr><td width="50%">
 
-ne
+si
 
 </td><td width="50%">
 
-Nepali
+Sinhala
 
 </td></tr>
 <tr><td width="50%">
 
-tl
+sk
 
 </td><td width="50%">
 
-Tagalog
+Slovak
 
 </td></tr>
 <tr><td width="50%">
