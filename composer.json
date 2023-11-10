@@ -32,7 +32,7 @@
         "php": "^8.1",
         "ext-json": "*",
         "dragon-code/support": "^6.11",
-        "laravel-lang/locales": "^1.6"
+        "laravel-lang/locales": "^1.0"
     },
     "require-dev": {
         "laravel-lang/status-generator": "^2.3.1",
