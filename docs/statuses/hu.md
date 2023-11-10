@@ -32,6 +32,15 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
+bn
+
+</td><td width="50%">
+
+Bangla
+
+</td></tr>
+<tr><td width="50%">
+
 hi
 
 </td><td width="50%">
@@ -55,15 +64,6 @@ kn
 </td><td width="50%">
 
 Kannada
-
-</td></tr>
-<tr><td width="50%">
-
-mr
-
-</td><td width="50%">
-
-Marathi
 
 </td></tr>
 <tr><td width="50%">

@@ -4,12 +4,12 @@ editLink: false
 
 # ro
 
-##### All missed: 15
+##### All missed: 8
 
 
 ### json
 
-##### Missing: 15
+##### Missing: 8
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,33 +32,6 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-ar
-
-</td><td width="50%">
-
-Arabic
-
-</td></tr>
-<tr><td width="50%">
-
-ca
-
-</td><td width="50%">
-
-Catalan
-
-</td></tr>
-<tr><td width="50%">
-
-gl
-
-</td><td width="50%">
-
-Galician
-
-</td></tr>
-<tr><td width="50%">
-
 gu
 
 </td><td width="50%">
@@ -77,24 +50,6 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-ka
-
-</td><td width="50%">
-
-Georgian
-
-</td></tr>
-<tr><td width="50%">
-
-km
-
-</td><td width="50%">
-
-Khmer
-
-</td></tr>
-<tr><td width="50%">
-
 kn
 
 </td><td width="50%">
@@ -109,24 +64,6 @@ mr
 </td><td width="50%">
 
 Marathi
-
-</td></tr>
-<tr><td width="50%">
-
-ps
-
-</td><td width="50%">
-
-Pashto
-
-</td></tr>
-<tr><td width="50%">
-
-si
-
-</td><td width="50%">
-
-Sinhala
 
 </td></tr>
 <tr><td width="50%">

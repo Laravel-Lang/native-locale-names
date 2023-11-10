@@ -32,11 +32,11 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
+fil
 
 </td><td width="50%">
 
-Bengali
+Filipino
 
 </td></tr>
 <tr><td width="50%">
@@ -50,11 +50,11 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-ka
+km
 
 </td><td width="50%">
 
-Georgian
+Khmer
 
 </td></tr>
 <tr><td width="50%">
@@ -86,15 +86,6 @@ Nepali
 </td></tr>
 <tr><td width="50%">
 
-ps
-
-</td><td width="50%">
-
-Pashto
-
-</td></tr>
-<tr><td width="50%">
-
 si
 
 </td><td width="50%">
@@ -109,6 +100,15 @@ sw
 </td><td width="50%">
 
 Swahili
+
+</td></tr>
+<tr><td width="50%">
+
+th
+
+</td><td width="50%">
+
+Thai
 
 </td></tr>
 <tr><td width="50%">

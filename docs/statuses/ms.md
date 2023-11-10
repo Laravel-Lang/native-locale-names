@@ -4,12 +4,12 @@ editLink: false
 
 # ms
 
-##### All missed: 18
+##### All missed: 20
 
 
 ### json
 
-##### Missing: 18
+##### Missing: 20
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,20 +32,11 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-ca
+cs
 
 </td><td width="50%">
 
-Catalan
-
-</td></tr>
-<tr><td width="50%">
-
-da
-
-</td><td width="50%">
-
-Danish
+Czech
 
 </td></tr>
 <tr><td width="50%">
@@ -55,6 +46,15 @@ de_CH
 </td><td width="50%">
 
 Swiss High German
+
+</td></tr>
+<tr><td width="50%">
+
+el
+
+</td><td width="50%">
+
+Greek
 
 </td></tr>
 <tr><td width="50%">
@@ -73,15 +73,6 @@ hi
 </td><td width="50%">
 
 Hindi
-
-</td></tr>
-<tr><td width="50%">
-
-ka
-
-</td><td width="50%">
-
-Georgian
 
 </td></tr>
 <tr><td width="50%">
@@ -140,11 +131,29 @@ Sinhala
 </td></tr>
 <tr><td width="50%">
 
+sk
+
+</td><td width="50%">
+
+Slovak
+
+</td></tr>
+<tr><td width="50%">
+
+sw
+
+</td><td width="50%">
+
+Swahili
+
+</td></tr>
+<tr><td width="50%">
+
 tg
 
 </td><td width="50%">
 
-Tajik (Cyrillic)
+Tajik
 
 </td></tr>
 <tr><td width="50%">
@@ -163,6 +172,15 @@ ug
 </td><td width="50%">
 
 Uyghur
+
+</td></tr>
+<tr><td width="50%">
+
+ur
+
+</td><td width="50%">
+
+Urdu
 
 </td></tr>
 <tr><td width="50%">

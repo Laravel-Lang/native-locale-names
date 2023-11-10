@@ -4,12 +4,12 @@ editLink: false
 
 # fr
 
-##### All missed: 13
+##### All missed: 11
 
 
 ### json
 
-##### Missing: 13
+##### Missing: 11
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,15 +32,6 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
-
-</td><td width="50%">
-
-Bengali
-
-</td></tr>
-<tr><td width="50%">
-
 ca
 
 </td><td width="50%">
@@ -59,11 +50,11 @@ Basque
 </td></tr>
 <tr><td width="50%">
 
-gu
+fil
 
 </td><td width="50%">
 
-Gujarati
+Filipino
 
 </td></tr>
 <tr><td width="50%">
@@ -100,15 +91,6 @@ kn
 </td><td width="50%">
 
 Kannada
-
-</td></tr>
-<tr><td width="50%">
-
-mr
-
-</td><td width="50%">
-
-Marathi
 
 </td></tr>
 <tr><td width="50%">

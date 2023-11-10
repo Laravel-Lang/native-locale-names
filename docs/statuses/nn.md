@@ -4,12 +4,12 @@ editLink: false
 
 # nn
 
-##### All missed: 12
+##### All missed: 11
 
 
 ### json
 
-##### Missing: 12
+##### Missing: 11
 
 <table width="100%">
 <tr><th width="50%">
@@ -28,15 +28,6 @@ af
 </td><td width="50%">
 
 Afrikaans
-
-</td></tr>
-<tr><td width="50%">
-
-bn
-
-</td><td width="50%">
-
-Bengali
 
 </td></tr>
 <tr><td width="50%">

@@ -4,12 +4,12 @@ editLink: false
 
 # nl
 
-##### All missed: 9
+##### All missed: 11
 
 
 ### json
 
-##### Missing: 9
+##### Missing: 11
 
 <table width="100%">
 <tr><th width="50%">
@@ -68,6 +68,15 @@ Khmer
 </td></tr>
 <tr><td width="50%">
 
+kn
+
+</td><td width="50%">
+
+Kannada
+
+</td></tr>
+<tr><td width="50%">
+
 mr
 
 </td><td width="50%">
@@ -82,6 +91,15 @@ sw
 </td><td width="50%">
 
 Swahili
+
+</td></tr>
+<tr><td width="50%">
+
+th
+
+</td><td width="50%">
+
+Thai
 
 </td></tr>
 <tr><td width="50%">

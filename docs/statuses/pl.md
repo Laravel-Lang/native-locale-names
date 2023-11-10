@@ -4,12 +4,12 @@ editLink: false
 
 # pl
 
-##### All missed: 5
+##### All missed: 6
 
 
 ### json
 
-##### Missing: 5
+##### Missing: 6
 
 <table width="100%">
 <tr><th width="50%">
@@ -23,20 +23,29 @@ Value
 </th></tr>
 <tr><td width="50%">
 
-cs
+af
 
 </td><td width="50%">
 
-Czech
+Afrikaans
 
 </td></tr>
 <tr><td width="50%">
 
-km
+fil
 
 </td><td width="50%">
 
-Khmer
+Filipino
+
+</td></tr>
+<tr><td width="50%">
+
+hi
+
+</td><td width="50%">
+
+Hindi
 
 </td></tr>
 <tr><td width="50%">

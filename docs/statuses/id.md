@@ -4,12 +4,12 @@ editLink: false
 
 # id
 
-##### All missed: 11
+##### All missed: 19
 
 
 ### json
 
-##### Missing: 11
+##### Missing: 19
 
 <table width="100%">
 <tr><th width="50%">
@@ -23,6 +23,33 @@ Value
 </th></tr>
 <tr><td width="50%">
 
+af
+
+</td><td width="50%">
+
+Afrikaans
+
+</td></tr>
+<tr><td width="50%">
+
+az
+
+</td><td width="50%">
+
+Azerbaijani
+
+</td></tr>
+<tr><td width="50%">
+
+cy
+
+</td><td width="50%">
+
+Welsh
+
+</td></tr>
+<tr><td width="50%">
+
 eu
 
 </td><td width="50%">
@@ -32,11 +59,11 @@ Basque
 </td></tr>
 <tr><td width="50%">
 
-gu
+fil
 
 </td><td width="50%">
 
-Gujarati
+Filipino
 
 </td></tr>
 <tr><td width="50%">
@@ -86,6 +113,24 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
+ne
+
+</td><td width="50%">
+
+Nepali
+
+</td></tr>
+<tr><td width="50%">
+
+ps
+
+</td><td width="50%">
+
+Pashto
+
+</td></tr>
+<tr><td width="50%">
+
 si
 
 </td><td width="50%">
@@ -95,11 +140,29 @@ Sinhala
 </td></tr>
 <tr><td width="50%">
 
+sk
+
+</td><td width="50%">
+
+Slovak
+
+</td></tr>
+<tr><td width="50%">
+
 sw
 
 </td><td width="50%">
 
 Swahili
+
+</td></tr>
+<tr><td width="50%">
+
+tg
+
+</td><td width="50%">
+
+Tajik
 
 </td></tr>
 <tr><td width="50%">
@@ -118,6 +181,15 @@ ug
 </td><td width="50%">
 
 Uyghur
+
+</td></tr>
+<tr><td width="50%">
+
+ur
+
+</td><td width="50%">
+
+Urdu
 
 </td></tr>
 </table>

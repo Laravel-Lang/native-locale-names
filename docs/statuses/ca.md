@@ -4,12 +4,12 @@ editLink: false
 
 # ca
 
-##### All missed: 9
+##### All missed: 8
 
 
 ### json
 
-##### Missing: 9
+##### Missing: 8
 
 <table width="100%">
 <tr><th width="50%">
@@ -21,6 +21,15 @@ Key
 Value
 
 </th></tr>
+<tr><td width="50%">
+
+af
+
+</td><td width="50%">
+
+Afrikaans
+
+</td></tr>
 <tr><td width="50%">
 
 gu
@@ -73,24 +82,6 @@ mr
 </td><td width="50%">
 
 Marathi
-
-</td></tr>
-<tr><td width="50%">
-
-ps
-
-</td><td width="50%">
-
-Pashto
-
-</td></tr>
-<tr><td width="50%">
-
-si
-
-</td><td width="50%">
-
-Sinhala
 
 </td></tr>
 <tr><td width="50%">

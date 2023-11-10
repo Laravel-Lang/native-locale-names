@@ -4,12 +4,12 @@ editLink: false
 
 # de
 
-##### All missed: 10
+##### All missed: 9
 
 
 ### json
 
-##### Missing: 10
+##### Missing: 9
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,11 +32,11 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-bn
+fil
 
 </td><td width="50%">
 
-Bengali
+Filipino
 
 </td></tr>
 <tr><td width="50%">
@@ -82,15 +82,6 @@ mr
 </td><td width="50%">
 
 Marathi
-
-</td></tr>
-<tr><td width="50%">
-
-ne
-
-</td><td width="50%">
-
-Nepali
 
 </td></tr>
 <tr><td width="50%">

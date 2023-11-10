@@ -4,12 +4,12 @@ editLink: false
 
 # tl
 
-##### All missed: 67
+##### All missed: 76
 
 
 ### json
 
-##### Missing: 67
+##### Missing: 76
 
 <table width="100%">
 <tr><th width="50%">
@@ -45,7 +45,7 @@ az
 
 </td><td width="50%">
 
-Azerbaijani (Latin)
+Azerbaijani
 
 </td></tr>
 <tr><td width="50%">
@@ -72,7 +72,7 @@ bn
 
 </td><td width="50%">
 
-Bengali
+Bangla
 
 </td></tr>
 <tr><td width="50%">
@@ -122,11 +122,38 @@ Danish
 </td></tr>
 <tr><td width="50%">
 
+de
+
+</td><td width="50%">
+
+German
+
+</td></tr>
+<tr><td width="50%">
+
 de_CH
 
 </td><td width="50%">
 
 Swiss High German
+
+</td></tr>
+<tr><td width="50%">
+
+el
+
+</td><td width="50%">
+
+Greek
+
+</td></tr>
+<tr><td width="50%">
+
+es
+
+</td><td width="50%">
+
+Spanish
 
 </td></tr>
 <tr><td width="50%">
@@ -172,6 +199,15 @@ fil
 </td><td width="50%">
 
 Filipino
+
+</td></tr>
+<tr><td width="50%">
+
+fr
+
+</td><td width="50%">
+
+French
 
 </td></tr>
 <tr><td width="50%">
@@ -257,6 +293,24 @@ Icelandic
 </td></tr>
 <tr><td width="50%">
 
+it
+
+</td><td width="50%">
+
+Italian
+
+</td></tr>
+<tr><td width="50%">
+
+ja
+
+</td><td width="50%">
+
+Japanese
+
+</td></tr>
+<tr><td width="50%">
+
 ka
 
 </td><td width="50%">
@@ -289,6 +343,15 @@ kn
 </td><td width="50%">
 
 Kannada
+
+</td></tr>
+<tr><td width="50%">
+
+ko
+
+</td><td width="50%">
+
+Korean
 
 </td></tr>
 <tr><td width="50%">
@@ -410,6 +473,15 @@ Pashto
 </td></tr>
 <tr><td width="50%">
 
+pt
+
+</td><td width="50%">
+
+Portuguese
+
+</td></tr>
+<tr><td width="50%">
+
 pt_BR
 
 </td><td width="50%">
@@ -424,6 +496,15 @@ ro
 </td><td width="50%">
 
 Romanian
+
+</td></tr>
+<tr><td width="50%">
+
+ru
+
+</td><td width="50%">
+
+Russian
 
 </td></tr>
 <tr><td width="50%">
@@ -459,7 +540,16 @@ sl
 
 </td><td width="50%">
 
-Slovene
+Slovenian
+
+</td></tr>
+<tr><td width="50%">
+
+sq
+
+</td><td width="50%">
+
+Albanian
 
 </td></tr>
 <tr><td width="50%">
@@ -513,7 +603,7 @@ tg
 
 </td><td width="50%">
 
-Tajik (Cyrillic)
+Tajik
 
 </td></tr>
 <tr><td width="50%">
@@ -559,15 +649,6 @@ ug
 </td><td width="50%">
 
 Uyghur
-
-</td></tr>
-<tr><td width="50%">
-
-uk
-
-</td><td width="50%">
-
-Ukrainian
 
 </td></tr>
 <tr><td width="50%">

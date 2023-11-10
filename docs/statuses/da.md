@@ -4,12 +4,12 @@ editLink: false
 
 # da
 
-##### All missed: 12
+##### All missed: 10
 
 
 ### json
 
-##### Missing: 12
+##### Missing: 10
 
 <table width="100%">
 <tr><th width="50%">
@@ -68,15 +68,6 @@ Kannada
 </td></tr>
 <tr><td width="50%">
 
-mr
-
-</td><td width="50%">
-
-Marathi
-
-</td></tr>
-<tr><td width="50%">
-
 ps
 
 </td><td width="50%">
@@ -109,15 +100,6 @@ tl
 </td><td width="50%">
 
 Tagalog
-
-</td></tr>
-<tr><td width="50%">
-
-ug
-
-</td><td width="50%">
-
-Uyghur
 
 </td></tr>
 <tr><td width="50%">

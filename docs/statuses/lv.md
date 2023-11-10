@@ -4,12 +4,12 @@ editLink: false
 
 # lv
 
-##### All missed: 3
+##### All missed: 2
 
 
 ### json
 
-##### Missing: 3
+##### Missing: 2
 
 <table width="100%">
 <tr><th width="50%">
@@ -28,15 +28,6 @@ hi
 </td><td width="50%">
 
 Hindi
-
-</td></tr>
-<tr><td width="50%">
-
-kn
-
-</td><td width="50%">
-
-Kannada
 
 </td></tr>
 <tr><td width="50%">

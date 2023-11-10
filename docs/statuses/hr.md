@@ -4,12 +4,12 @@ editLink: false
 
 # hr
 
-##### All missed: 4
+##### All missed: 3
 
 
 ### json
 
-##### Missing: 4
+##### Missing: 3
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,11 +32,11 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
-kn
+bn
 
 </td><td width="50%">
 
-Kannada
+Bangla
 
 </td></tr>
 <tr><td width="50%">
@@ -46,15 +46,6 @@ tl
 </td><td width="50%">
 
 Tagalog
-
-</td></tr>
-<tr><td width="50%">
-
-ur
-
-</td><td width="50%">
-
-Urdu
 
 </td></tr>
 </table>

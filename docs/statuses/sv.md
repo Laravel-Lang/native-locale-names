@@ -4,12 +4,12 @@ editLink: false
 
 # sv
 
-##### All missed: 11
+##### All missed: 8
 
 
 ### json
 
-##### Missing: 11
+##### Missing: 8
 
 <table width="100%">
 <tr><th width="50%">
@@ -50,15 +50,6 @@ Hindi
 </td></tr>
 <tr><td width="50%">
 
-km
-
-</td><td width="50%">
-
-Khmer
-
-</td></tr>
-<tr><td width="50%">
-
 kn
 
 </td><td width="50%">
@@ -77,29 +68,11 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-ps
-
-</td><td width="50%">
-
-Pashto
-
-</td></tr>
-<tr><td width="50%">
-
 sw
 
 </td><td width="50%">
 
 Swahili
-
-</td></tr>
-<tr><td width="50%">
-
-th
-
-</td><td width="50%">
-
-Thai
 
 </td></tr>
 <tr><td width="50%">

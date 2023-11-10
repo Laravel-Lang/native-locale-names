@@ -45,7 +45,7 @@ az
 
 </td><td width="50%">
 
-Azerbaijani (Latin)
+Azerbaijani
 
 </td></tr>
 <tr><td width="50%">
@@ -72,7 +72,7 @@ bn
 
 </td><td width="50%">
 
-Bengali
+Bangla
 
 </td></tr>
 <tr><td width="50%">
@@ -549,7 +549,7 @@ sl
 
 </td><td width="50%">
 
-Slovene
+Slovenian
 
 </td></tr>
 <tr><td width="50%">
@@ -612,7 +612,7 @@ tg
 
 </td><td width="50%">
 
-Tajik (Cyrillic)
+Tajik
 
 </td></tr>
 <tr><td width="50%">

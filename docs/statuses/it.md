@@ -4,12 +4,12 @@ editLink: false
 
 # it
 
-##### All missed: 9
+##### All missed: 11
 
 
 ### json
 
-##### Missing: 9
+##### Missing: 11
 
 <table width="100%">
 <tr><th width="50%">
@@ -77,11 +77,29 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
+ps
+
+</td><td width="50%">
+
+Pashto
+
+</td></tr>
+<tr><td width="50%">
+
 sw
 
 </td><td width="50%">
 
 Swahili
+
+</td></tr>
+<tr><td width="50%">
+
+th
+
+</td><td width="50%">
+
+Thai
 
 </td></tr>
 <tr><td width="50%">

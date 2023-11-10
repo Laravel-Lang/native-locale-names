@@ -2,14 +2,14 @@
 editLink: false
 ---
 
-# gl
+# _native
 
-##### All missed: 5
+##### All missed: 9
 
 
 ### json
 
-##### Missing: 5
+##### Missing: 9
 
 <table width="100%">
 <tr><th width="50%">
@@ -32,6 +32,15 @@ Afrikaans
 </td></tr>
 <tr><td width="50%">
 
+en
+
+</td><td width="50%">
+
+English
+
+</td></tr>
+<tr><td width="50%">
+
 fil
 
 </td><td width="50%">
@@ -41,29 +50,56 @@ Filipino
 </td></tr>
 <tr><td width="50%">
 
-hi
+oc
 
 </td><td width="50%">
 
-Hindi
+Occitan
 
 </td></tr>
 <tr><td width="50%">
 
-km
+sc
 
 </td><td width="50%">
 
-Khmer
+Sardinian
 
 </td></tr>
 <tr><td width="50%">
 
-mr
+sr_Latn
 
 </td><td width="50%">
 
-Marathi
+Serbian (Latin)
+
+</td></tr>
+<tr><td width="50%">
+
+sr_Latn_ME
+
+</td><td width="50%">
+
+Serbian (Montenegro)
+
+</td></tr>
+<tr><td width="50%">
+
+tl
+
+</td><td width="50%">
+
+Tagalog
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Latn
+
+</td><td width="50%">
+
+Uzbek (Latin)
 
 </td></tr>
 </table>
