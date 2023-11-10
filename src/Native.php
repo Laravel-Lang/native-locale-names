@@ -4,38 +4,56 @@ declare(strict_types=1);
 
 namespace LaravelLang\NativeLocaleNames;
 
-use DragonCode\Support\Facades\Helpers\Arr;
 use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\NativeLocaleNames\Enums\SortBy;
+use LaravelLang\NativeLocaleNames\Helpers\Arr;
 
 class Native
 {
-    protected static Locale $default = Locale::English;
+    public static function get(Locale|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
+    {
+        return Arr::sortBy(
+            static::forLocale($locale) ?: static::perLocale(),
+            $sortBy
+        );
+    }
 
-    public static function get(Locale|string|null $locale): array
+    protected static function perLocale(): array
+    {
+        $result = [];
+
+        foreach (Locale::values() as $locale) {
+            $result[$locale] = static::load(static::path($locale))[$locale];
+        }
+
+        return $result;
+    }
+
+    protected static function forLocale(Locale|string|null $locale): array
     {
         if ($path = static::path($locale)) {
             return static::load($path);
         }
 
-        return static::load(static::path());
+        return [];
     }
 
     protected static function load(string $path): array
     {
-        return Arr::ofFile($path)->toArray();
+        return Arr::file($path);
     }
 
     protected static function path(Locale|string|null $locale = null): bool|string
     {
-        return realpath(__DIR__ . '/../locales/' . static::locale($locale) . '/php.json');
-    }
-
-    protected static function locale(Locale|string|null $locale): string
-    {
-        if (empty($locale)) {
-            return Locale::English->value;
+        if ($locale = static::locale($locale)) {
+            return realpath(__DIR__ . '/../locales/' . $locale . '/php.json');
         }
 
+        return false;
+    }
+
+    protected static function locale(Locale|string|null $locale): ?string
+    {
         return $locale->value ?? $locale;
     }
 }

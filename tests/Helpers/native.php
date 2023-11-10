@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use DragonCode\Support\Facades\Helpers\Arr;
+use LaravelLang\NativeLocaleNames\Helpers\Arr;
 
 function sourceLocale(string $locale): array
 {
-    return Arr::ofFile(__DIR__ . '/../../locales/' . $locale . '/php.json')->toArray();
+    return Arr::file(__DIR__ . '/../../locales/' . $locale . '/php.json');
 }
