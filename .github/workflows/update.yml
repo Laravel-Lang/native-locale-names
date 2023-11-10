@@ -52,7 +52,7 @@ jobs:
                     IS_DIRTY=1
 
                     vendor/bin/lang sync
-                    php app/combined.php
+                    php bin/combined.php
 
                     { git add . && git commit -a -m "🔑 Synchronization of translation keys"; } || IS_DIRTY=0
 

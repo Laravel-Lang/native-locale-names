@@ -21,6 +21,11 @@ class Path
 {
     public static function resolve(string $locale): bool|string
     {
-        return realpath(__DIR__ . '/../../locales/' . $locale . '/php.json');
+        return realpath(__DIR__ . '/../../locales/' . $locale . '/json.json');
+    }
+
+    public static function exists(string $locale): bool
+    {
+        return static::resolve($locale) !== false;
     }
 }

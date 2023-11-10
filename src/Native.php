@@ -56,6 +56,10 @@ class Native
             return null;
         }
 
-        return $locale->value ?? Locale::tryFrom($locale)?->value;
+        if (class_exists(Locale::class) && $locale instanceof Locale) {
+            return $locale->value;
+        }
+
+        return Path::exists($locale) ? $locale : null;
     }
 }
