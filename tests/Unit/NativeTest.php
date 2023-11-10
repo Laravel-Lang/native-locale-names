@@ -21,6 +21,6 @@ use LaravelLang\NativeLocaleNames\Native;
 it('should not be a clone of the English version')
     ->expect(fn () => Native::get())
     ->toBeSameCount()
-    ->toBe(Arr::sort(sourceLocale('_combined')))
+    ->toBe(Arr::sort(sourceLocale('_native')))
     ->not->toBe(Arr::sort(sourceLocale('en')))
     ->not->toBeEmpty();

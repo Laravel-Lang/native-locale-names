@@ -15,21 +15,23 @@
 
 declare(strict_types=1);
 
+namespace LaravelLang\Dev\Services;
+
 use DragonCode\Support\Facades\Filesystem\File;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
-use LaravelLang\NativeLocaleNames\Native;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+class Filesystem
+{
+    public static function read(string $path): array
+    {
+        return Arr::file($path);
+    }
 
-$result = [];
-
-$locales = Arr::file(__DIR__ . '/../source/locales.json');
-
-foreach (array_keys($locales) as $locale) {
-    $result[$locale] = Native::get($locale)[$locale];
+    public static function store(string $path, array $content): void
+    {
+        File::store(
+            $path,
+            json_encode($content, JSON_UNESCAPED_UNICODE ^ JSON_UNESCAPED_SLASHES ^ JSON_PRETTY_PRINT) . PHP_EOL
+        );
+    }
 }
-
-File::store(
-    __DIR__ . '/../locales/_combined/json.json',
-    json_encode(Arr::ksort($result), JSON_UNESCAPED_UNICODE ^ JSON_UNESCAPED_SLASHES ^ JSON_PRETTY_PRINT)
-);

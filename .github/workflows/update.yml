@@ -52,7 +52,8 @@ jobs:
                     IS_DIRTY=1
 
                     vendor/bin/lang sync
-                    php bin/combined.php
+                    bin/native translate
+                    bin/native collect
 
                     { git add . && git commit -a -m "🔑 Synchronization of translation keys"; } || IS_DIRTY=0
 

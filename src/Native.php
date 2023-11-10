@@ -24,7 +24,7 @@ use LaravelLang\NativeLocaleNames\Helpers\Path;
 
 class Native
 {
-    protected static string $default = '_combined';
+    protected static string $default = '_native';
 
     public static function get(BackedEnum|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
     {
