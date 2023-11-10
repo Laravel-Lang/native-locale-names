@@ -19,7 +19,7 @@ namespace LaravelLang\NativeLocaleNames\Helpers;
 
 class Path
 {
-    public static function resolve(string $locale): string|bool
+    public static function resolve(string $locale): bool|string
     {
         return realpath(__DIR__ . '/../../locales/' . $locale . '/php.json');
     }
