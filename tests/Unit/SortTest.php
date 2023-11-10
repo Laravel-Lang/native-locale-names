@@ -19,13 +19,22 @@ use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Native;
 
 it('checks default sorting', function (string $locale) {
-    expect(Native::get($locale))->toBeNotEmpty()->toBeSameCount()->toBeLocale($locale);
+    expect(Native::get($locale))
+        ->toBeSameCount()
+        ->toBeLocale($locale)
+        ->not->toBeEmpty();
 })->with('locales-string');
 
 it('checks sorting by key', function (string $locale) {
-    expect(Native::get($locale, SortBy::Key))->toBeNotEmpty()->toBeSameCount()->toBeLocale($locale, SortBy::Key);
+    expect(Native::get($locale, SortBy::Key))
+        ->toBeSameCount()
+        ->toBeLocale($locale, SortBy::Key)
+        ->not->toBeEmpty();
 })->with('locales-string');
 
 it('checks sorting by value', function (string $locale) {
-    expect(Native::get($locale, SortBy::Value))->toBeNotEmpty()->toBeSameCount()->toBeLocale($locale, SortBy::Value);
+    expect(Native::get($locale, SortBy::Value))
+        ->toBeSameCount()
+        ->toBeLocale($locale, SortBy::Value)
+        ->not->toBeEmpty();
 })->with('locales-string');

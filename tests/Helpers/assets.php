@@ -20,12 +20,6 @@ use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
 use PHPUnit\Framework\Assert;
 
-expect()->extend('toBeNotEmpty', function () {
-    Assert::assertNotEmpty($this->value);
-
-    return $this;
-});
-
 expect()->extend('toBeSameCount', function () {
     Assert::assertCount(count(Locale::values()), $this->value);
 
