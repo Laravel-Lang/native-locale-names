@@ -11,13 +11,15 @@ use LaravelLang\NativeLocaleNames\Helpers\Path;
 
 class Native
 {
+    protected static string $default = '_combined';
+
     public static function get(Locale|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
     {
         if ($locale = static::locale($locale)) {
             return static::forLocale($locale, $sortBy);
         }
 
-        return static::forLocale('_combined', $sortBy);
+        return static::forLocale(static::$default, $sortBy);
     }
 
     protected static function forLocale(string $locale, SortBy $sortBy): array
@@ -32,7 +34,7 @@ class Native
 
     protected static function path(string $locale): bool|string
     {
-        return Path::resolve($locale) ?: Path::resolve('_combined');
+        return Path::resolve($locale) ?: Path::resolve(static::$default);
     }
 
     protected static function locale(Locale|string|null $locale): ?string
