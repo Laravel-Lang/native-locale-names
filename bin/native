@@ -1,0 +1,51 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * This file is part of the "laravel-lang/native-locale-names" project.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author Andrey Helldar <helldar@dragon-code.pro>
+ * @copyright 2023 Laravel Lang Team
+ * @license MIT
+ *
+ * @see https://laravel-lang.com
+ */
+
+declare(strict_types=1);
+
+use LaravelLang\Dev\Commands\Collect;
+use LaravelLang\Dev\Commands\Translate;
+use Symfony\Component\Console\Application;
+
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+
+$possibleFiles = [
+    __DIR__ . '/../../../autoload.php',
+    __DIR__ . '/../../autoload.php',
+    __DIR__ . '/../vendor/autoload.php',
+];
+
+$file = null;
+
+foreach ($possibleFiles as $possible) {
+    if (file_exists($possible)) {
+        $file = $possible;
+        break;
+    }
+}
+
+if (is_null($file)) {
+    throw new RuntimeException('Unable to locate "autoload.php" file.');
+}
+
+require_once $file;
+
+$application = new Application('Laravel Lang: Native Locale Names');
+
+$application->add(new Collect());
+$application->add(new Translate());
+
+$application->run();
