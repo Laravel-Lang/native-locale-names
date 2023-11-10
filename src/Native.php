@@ -7,35 +7,24 @@ namespace LaravelLang\NativeLocaleNames;
 use LaravelLang\Locales\Enums\Locale;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
+use LaravelLang\NativeLocaleNames\Helpers\Path;
 
 class Native
 {
+    protected static string $default = '_combined';
+
     public static function get(Locale|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
     {
-        return Arr::sortBy(
-            static::forLocale($locale) ?: static::perLocale(),
-            $sortBy
-        );
-    }
-
-    protected static function perLocale(): array
-    {
-        $result = [];
-
-        foreach (Locale::values() as $locale) {
-            $result[$locale] = static::load(static::path($locale))[$locale];
+        if ($locale = static::locale($locale)) {
+            return static::forLocale($locale, $sortBy);
         }
 
-        return $result;
+        return static::forLocale(static::$default, $sortBy);
     }
 
-    protected static function forLocale(Locale|string|null $locale): array
+    protected static function forLocale(string $locale, SortBy $sortBy): array
     {
-        if ($path = static::path($locale)) {
-            return static::load($path);
-        }
-
-        return [];
+        return Arr::sortBy(static::load(static::path($locale)), $sortBy);
     }
 
     protected static function load(string $path): array
@@ -43,17 +32,17 @@ class Native
         return Arr::file($path);
     }
 
-    protected static function path(Locale|string|null $locale = null): bool|string
+    protected static function path(string $locale): bool|string
     {
-        if ($locale = static::locale($locale)) {
-            return realpath(__DIR__ . '/../locales/' . $locale . '/php.json');
-        }
-
-        return false;
+        return Path::resolve($locale) ?: Path::resolve(static::$default);
     }
 
     protected static function locale(Locale|string|null $locale): ?string
     {
-        return $locale->value ?? $locale;
+        if (empty($locale)) {
+            return null;
+        }
+
+        return $locale->value ?? Locale::tryFrom($locale)?->value;
     }
 }
