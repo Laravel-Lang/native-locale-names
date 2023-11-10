@@ -17,7 +17,7 @@ declare(strict_types=1);
 
 namespace LaravelLang\NativeLocaleNames;
 
-use LaravelLang\Locales\Enums\Locale;
+use BackedEnum;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
 use LaravelLang\NativeLocaleNames\Helpers\Path;
@@ -26,7 +26,7 @@ class Native
 {
     protected static string $default = '_combined';
 
-    public static function get(Locale|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
+    public static function get(BackedEnum|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
     {
         if ($locale = static::locale($locale)) {
             return static::forLocale($locale, $sortBy);
@@ -50,16 +50,16 @@ class Native
         return Path::resolve($locale) ?: Path::resolve(static::$default);
     }
 
-    protected static function locale(Locale|string|null $locale): ?string
+    protected static function locale(BackedEnum|string|null $locale): ?string
     {
         if (empty($locale)) {
             return null;
         }
 
-        if (class_exists(Locale::class) && $locale instanceof Locale) {
-            return $locale->value;
+        if ($locale instanceof BackedEnum) {
+            $locale = $locale->value;
         }
 
-        return Path::exists($locale) ? $locale : null;
+        return Path::exists((string) $locale) ? $locale : null;
     }
 }
