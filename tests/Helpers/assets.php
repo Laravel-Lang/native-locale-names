@@ -19,7 +19,7 @@ expect()->extend('toBeSameCount', function () {
     return $this;
 });
 
-expect()->extend('toBeLocale', function (string|Locale $locale, SortBy $sortBy = SortBy::Value) {
+expect()->extend('toBeLocale', function (Locale|string $locale, SortBy $sortBy = SortBy::Value) {
     $values = Arr::sortBy(sourceLocale($locale->value ?? $locale), $sortBy);
 
     return $this->toBe($values);
