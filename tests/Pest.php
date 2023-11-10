@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the "laravel-lang/locales" project.
+ * This file is part of the "laravel-lang/native-locale-names" project.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
