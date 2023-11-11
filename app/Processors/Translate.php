@@ -51,23 +51,18 @@ class Translate extends Processor
         foreach ($locales as $locale) {
             $this->output->writeln('    ' . $locale . '...');
 
-            $this->process($locales, $this->localeFile($locale), $locale, ['zh_*']);
+            $this->process($locales, $this->localeFile($locale), $locale);
         }
     }
 
-    protected function process(array $available, string $path, string $locale, array $skip = []): void
+    protected function process(array $available, string $path, string $locale): void
     {
-        if (Str::is($skip, $locale)) {
-            $this->output->writeln('      skip');
-
-            return;
-        }
-
-        $values  = $this->load($path);
-        $locales = $this->planet->get($locale);
+        $values = $this->load($path);
 
         foreach ($available as $key) {
-            $values[$key] = Str::title($locales[$key] ?? $values[$key]);
+            if ($name = $this->planet->get($key, $locale)) {
+                $values[$key] = Str::title($name);
+            }
         }
 
         $this->store($path, $values);
