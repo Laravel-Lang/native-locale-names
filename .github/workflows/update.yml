@@ -52,7 +52,6 @@ jobs:
                     IS_DIRTY=1
 
                     vendor/bin/lang sync
-                    sudo php ./bin/native cldr
                     sudo php ./bin/native translate
                     sudo php ./bin/native collect
 
