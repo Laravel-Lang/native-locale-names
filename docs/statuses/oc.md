@@ -4,12 +4,12 @@ editLink: false
 
 # oc
 
-##### All missed: 79
+##### All missed: 69
 
 
 ### json
 
-##### Missing: 79
+##### Missing: 69
 
 <table width="100%">
 <tr><th width="50%">
@@ -127,15 +127,6 @@ de
 </td><td width="50%">
 
 German
-
-</td></tr>
-<tr><td width="50%">
-
-de_CH
-
-</td><td width="50%">
-
-Swiss High German
 
 </td></tr>
 <tr><td width="50%">
@@ -491,15 +482,6 @@ Portuguese
 </td></tr>
 <tr><td width="50%">
 
-pt_BR
-
-</td><td width="50%">
-
-Brazilian Portuguese
-
-</td></tr>
-<tr><td width="50%">
-
 ro
 
 </td><td width="50%">
@@ -559,33 +541,6 @@ sq
 </td><td width="50%">
 
 Albanian
-
-</td></tr>
-<tr><td width="50%">
-
-sr_Cyrl
-
-</td><td width="50%">
-
-Serbian (Cyrillic)
-
-</td></tr>
-<tr><td width="50%">
-
-sr_Latn
-
-</td><td width="50%">
-
-Serbian (Latin)
-
-</td></tr>
-<tr><td width="50%">
-
-sr_Latn_ME
-
-</td><td width="50%">
-
-Serbian (Montenegro)
 
 </td></tr>
 <tr><td width="50%">
@@ -680,56 +635,11 @@ Urdu
 </td></tr>
 <tr><td width="50%">
 
-uz_Cyrl
-
-</td><td width="50%">
-
-Uzbek (Cyrillic)
-
-</td></tr>
-<tr><td width="50%">
-
-uz_Latn
-
-</td><td width="50%">
-
-Uzbek (Latin)
-
-</td></tr>
-<tr><td width="50%">
-
 vi
 
 </td><td width="50%">
 
 Vietnamese
-
-</td></tr>
-<tr><td width="50%">
-
-zh_CN
-
-</td><td width="50%">
-
-Chinese (Simplified)
-
-</td></tr>
-<tr><td width="50%">
-
-zh_HK
-
-</td><td width="50%">
-
-Chinese (Hong Kong)
-
-</td></tr>
-<tr><td width="50%">
-
-zh_TW
-
-</td><td width="50%">
-
-Chinese (Taiwan)
 
 </td></tr>
 </table>

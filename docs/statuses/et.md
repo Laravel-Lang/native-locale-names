@@ -4,12 +4,12 @@ editLink: false
 
 # et
 
-##### All missed: 6
+##### All missed: 5
 
 
 ### json
 
-##### Missing: 6
+##### Missing: 5
 
 <table width="100%">
 <tr><th width="50%">
@@ -55,15 +55,6 @@ ne
 </td><td width="50%">
 
 Nepali
-
-</td></tr>
-<tr><td width="50%">
-
-tl
-
-</td><td width="50%">
-
-Tagalog
 
 </td></tr>
 <tr><td width="50%">

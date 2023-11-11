@@ -4,12 +4,12 @@ editLink: false
 
 # ms
 
-##### All missed: 20
+##### All missed: 17
 
 
 ### json
 
-##### Missing: 20
+##### Missing: 17
 
 <table width="100%">
 <tr><th width="50%">
@@ -37,15 +37,6 @@ cs
 </td><td width="50%">
 
 Czech
-
-</td></tr>
-<tr><td width="50%">
-
-de_CH
-
-</td><td width="50%">
-
-Swiss High German
 
 </td></tr>
 <tr><td width="50%">
@@ -104,15 +95,6 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-oc
-
-</td><td width="50%">
-
-Occitan
-
-</td></tr>
-<tr><td width="50%">
-
 ps
 
 </td><td width="50%">
@@ -167,6 +149,15 @@ Thai
 </td></tr>
 <tr><td width="50%">
 
+tk
+
+</td><td width="50%">
+
+Turkmen
+
+</td></tr>
+<tr><td width="50%">
+
 ug
 
 </td><td width="50%">
@@ -181,24 +172,6 @@ ur
 </td><td width="50%">
 
 Urdu
-
-</td></tr>
-<tr><td width="50%">
-
-uz_Cyrl
-
-</td><td width="50%">
-
-Uzbek (Cyrillic)
-
-</td></tr>
-<tr><td width="50%">
-
-uz_Latn
-
-</td><td width="50%">
-
-Uzbek (Latin)
 
 </td></tr>
 </table>

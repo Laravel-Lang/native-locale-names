@@ -4,12 +4,12 @@ editLink: false
 
 # ca
 
-##### All missed: 8
+##### All missed: 9
 
 
 ### json
 
-##### Missing: 8
+##### Missing: 9
 
 <table width="100%">
 <tr><th width="50%">
@@ -86,11 +86,20 @@ Marathi
 </td></tr>
 <tr><td width="50%">
 
-tl
+uz_Cyrl
 
 </td><td width="50%">
 
-Tagalog
+Uzbek
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Latn
+
+</td><td width="50%">
+
+Uzbek
 
 </td></tr>
 </table>

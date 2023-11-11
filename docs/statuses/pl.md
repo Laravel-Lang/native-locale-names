@@ -4,12 +4,12 @@ editLink: false
 
 # pl
 
-##### All missed: 6
+##### All missed: 5
 
 
 ### json
 
-##### Missing: 6
+##### Missing: 5
 
 <table width="100%">
 <tr><th width="50%">
@@ -28,15 +28,6 @@ af
 </td><td width="50%">
 
 Afrikaans
-
-</td></tr>
-<tr><td width="50%">
-
-fil
-
-</td><td width="50%">
-
-Filipino
 
 </td></tr>
 <tr><td width="50%">

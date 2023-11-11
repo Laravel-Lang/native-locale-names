@@ -4,12 +4,12 @@ editLink: false
 
 # it
 
-##### All missed: 11
+##### All missed: 10
 
 
 ### json
 
-##### Missing: 11
+##### Missing: 10
 
 <table width="100%">
 <tr><th width="50%">
@@ -91,15 +91,6 @@ sw
 </td><td width="50%">
 
 Swahili
-
-</td></tr>
-<tr><td width="50%">
-
-th
-
-</td><td width="50%">
-
-Thai
 
 </td></tr>
 <tr><td width="50%">

@@ -4,12 +4,12 @@ editLink: false
 
 # fr
 
-##### All missed: 11
+##### All missed: 12
 
 
 ### json
 
-##### Missing: 11
+##### Missing: 12
 
 <table width="100%">
 <tr><th width="50%">
@@ -91,6 +91,15 @@ kn
 </td><td width="50%">
 
 Kannada
+
+</td></tr>
+<tr><td width="50%">
+
+mr
+
+</td><td width="50%">
+
+Marathi
 
 </td></tr>
 <tr><td width="50%">

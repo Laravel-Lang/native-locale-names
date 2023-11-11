@@ -4,12 +4,12 @@ editLink: false
 
 # _native
 
-##### All missed: 9
+##### All missed: 5
 
 
 ### json
 
-##### Missing: 9
+##### Missing: 5
 
 <table width="100%">
 <tr><th width="50%">
@@ -59,47 +59,11 @@ Occitan
 </td></tr>
 <tr><td width="50%">
 
-sc
-
-</td><td width="50%">
-
-Sardinian
-
-</td></tr>
-<tr><td width="50%">
-
-sr_Latn
-
-</td><td width="50%">
-
-Serbian (Latin)
-
-</td></tr>
-<tr><td width="50%">
-
-sr_Latn_ME
-
-</td><td width="50%">
-
-Serbian (Montenegro)
-
-</td></tr>
-<tr><td width="50%">
-
 tl
 
 </td><td width="50%">
 
 Tagalog
-
-</td></tr>
-<tr><td width="50%">
-
-uz_Latn
-
-</td><td width="50%">
-
-Uzbek (Latin)
 
 </td></tr>
 </table>

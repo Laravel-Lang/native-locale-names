@@ -4,12 +4,12 @@ editLink: false
 
 # id
 
-##### All missed: 19
+##### All missed: 23
 
 
 ### json
 
-##### Missing: 19
+##### Missing: 23
 
 <table width="100%">
 <tr><th width="50%">
@@ -176,6 +176,24 @@ Thai
 </td></tr>
 <tr><td width="50%">
 
+tk
+
+</td><td width="50%">
+
+Turkmen
+
+</td></tr>
+<tr><td width="50%">
+
+tl
+
+</td><td width="50%">
+
+Tagalog
+
+</td></tr>
+<tr><td width="50%">
+
 ug
 
 </td><td width="50%">
@@ -190,6 +208,24 @@ ur
 </td><td width="50%">
 
 Urdu
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Cyrl
+
+</td><td width="50%">
+
+Uzbek
+
+</td></tr>
+<tr><td width="50%">
+
+uz_Latn
+
+</td><td width="50%">
+
+Uzbek
 
 </td></tr>
 </table>

@@ -4,12 +4,12 @@ editLink: false
 
 # eu
 
-##### All missed: 3
+##### All missed: 2
 
 
 ### json
 
-##### Missing: 3
+##### Missing: 2
 
 <table width="100%">
 <tr><th width="50%">
@@ -37,15 +37,6 @@ si
 </td><td width="50%">
 
 Sinhala
-
-</td></tr>
-<tr><td width="50%">
-
-tl
-
-</td><td width="50%">
-
-Tagalog
 
 </td></tr>
 </table>

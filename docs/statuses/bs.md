@@ -4,12 +4,12 @@ editLink: false
 
 # bs
 
-##### All missed: 8
+##### All missed: 4
 
 
 ### json
 
-##### Missing: 8
+##### Missing: 4
 
 <table width="100%">
 <tr><th width="50%">
@@ -21,15 +21,6 @@ Key
 Value
 
 </th></tr>
-<tr><td width="50%">
-
-de_CH
-
-</td><td width="50%">
-
-Swiss High German
-
-</td></tr>
 <tr><td width="50%">
 
 fil
@@ -46,33 +37,6 @@ hi
 </td><td width="50%">
 
 Hindi
-
-</td></tr>
-<tr><td width="50%">
-
-oc
-
-</td><td width="50%">
-
-Occitan
-
-</td></tr>
-<tr><td width="50%">
-
-sc
-
-</td><td width="50%">
-
-Sardinian
-
-</td></tr>
-<tr><td width="50%">
-
-tk
-
-</td><td width="50%">
-
-Turkmen
 
 </td></tr>
 <tr><td width="50%">
