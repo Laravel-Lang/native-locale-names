@@ -34,11 +34,9 @@ class Arr
 
     public static function sort($array): array
     {
-        $array = array_flip($array);
+        asort($array);
 
-        ksort($array);
-
-        return array_flip($array);
+        return $array;
     }
 
     public static function ksort($array): array
