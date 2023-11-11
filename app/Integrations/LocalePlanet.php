@@ -19,34 +19,55 @@ namespace LaravelLang\Dev\Integrations;
 
 use Exception;
 use GuzzleHttp\Client;
+use Symfony\Component\DomCrawler\Crawler;
+use Throwable;
 
 class LocalePlanet
 {
-    protected string $uri = 'https://www.localeplanet.com/api/%s/langmap.json';
+    protected string $uri = 'https://www.localeplanet.com/icu/%s/index.html?locale=%s';
 
     protected int $tries = 5;
 
-    protected int $timeout = 1000;
+    protected int $timeout = 500;
 
     public function __construct(
-        protected Client $client = new Client()
+        protected Client $client = new Client(),
     ) {}
 
-    public function get(string $locale): array
+    public function get(string $locale, string $forLocale): ?string
     {
-        return $this->request(sprintf($this->uri, $locale));
+        try {
+            return $this->parse(
+                $this->request(sprintf($this->uri, $locale, $forLocale))
+            );
+        }
+        catch (Throwable) {
+            return null;
+        }
     }
 
-    protected function request(string $uri): array
+    protected function request(string $uri): string
     {
         return retry($this->tries, function () use ($uri) {
             $response = $this->client->get($uri);
 
             if ($response->getStatusCode() >= 400) {
-                throw new Exception($response->getReasonPhrase());
+                throw new Exception();
             }
 
-            return json_decode($response->getBody()->getContents(), true);
+            return $response->getBody()->getContents();
         }, $this->timeout);
+    }
+
+    protected function parse(string $html): ?string
+    {
+        return $this->crawler($html)
+            ->filter('table > tr:nth-child(5) > td:nth-child(2)')
+            ->text('') ?: null;
+    }
+
+    protected function crawler(string $html): Crawler
+    {
+        return new Crawler($html);
     }
 }

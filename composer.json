@@ -39,6 +39,8 @@
         "laravel-lang/status-generator": "^2.3.1",
         "pestphp/pest": "^2.24.3",
         "symfony/console": "^6.3",
+        "symfony/css-selector": "^6.3",
+        "symfony/dom-crawler": "^6.3",
         "symfony/var-dumper": "^6.3"
     },
     "minimum-stability": "stable",
