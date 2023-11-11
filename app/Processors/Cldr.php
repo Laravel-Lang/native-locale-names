@@ -17,6 +17,7 @@ declare(strict_types=1);
 
 namespace LaravelLang\Dev\Processors;
 
+use Illuminate\Support\Str;
 use LaravelLang\Dev\Services\Process;
 
 class Cldr extends Processor
@@ -37,6 +38,13 @@ class Cldr extends Processor
     {
         return collect(parent::locales())
             ->filter(fn (string $locale) => ! in_array($locale, $this->notSupported, true))
+            ->map(fn (string $locale) => [
+                $locale,
+                Str::before($locale, '_'),
+            ])
+            ->flatten()
+            ->unique()
+            ->sort()
             ->map(fn (string $locale) => '+' . $locale)
             ->implode(',');
     }

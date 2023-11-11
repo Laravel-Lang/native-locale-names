@@ -51,9 +51,9 @@ jobs:
                 run: |
                     IS_DIRTY=1
 
-                    vendor/bin/lang sync
                     sudo php ./bin/native translate
                     sudo php ./bin/native collect
+                    vendor/bin/lang sync
 
                     { git add . && git commit -a -m "🔑 Synchronization of translation keys"; } || IS_DIRTY=0
 
