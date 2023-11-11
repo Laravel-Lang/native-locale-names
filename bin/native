@@ -16,6 +16,7 @@
 
 declare(strict_types=1);
 
+use LaravelLang\Dev\Commands\Cldr;
 use LaravelLang\Dev\Commands\Collect;
 use LaravelLang\Dev\Commands\Translate;
 use Symfony\Component\Console\Application;
@@ -47,5 +48,6 @@ $application = new Application('Laravel Lang: Native Locale Names');
 
 $application->add(new Collect());
 $application->add(new Translate());
+$application->add(new Cldr());
 
 $application->run();

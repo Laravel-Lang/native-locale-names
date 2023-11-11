@@ -18,7 +18,8 @@ declare(strict_types=1);
 namespace LaravelLang\Dev\Processors;
 
 use Illuminate\Support\Str;
-use LaravelLang\Dev\Integrations\LocalePlanet;
+use LaravelLang\Dev\Integrations\Cldr;
+use LaravelLang\Dev\Integrations\Integration;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class Translate extends Processor
@@ -27,7 +28,7 @@ class Translate extends Processor
 
     public function __construct(
         OutputInterface $output,
-        protected LocalePlanet $planet = new LocalePlanet()
+        protected Integration $translator = new Cldr()
     ) {
         parent::__construct($output);
     }
@@ -60,7 +61,7 @@ class Translate extends Processor
         $values = $this->load($path);
 
         foreach ($available as $key) {
-            if ($name = $this->planet->get($key, $locale)) {
+            if ($name = $this->translator->get($key, $locale)) {
                 $values[$key] = Str::title($name);
             }
         }
