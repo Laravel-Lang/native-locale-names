@@ -18,6 +18,7 @@ declare(strict_types=1);
 namespace LaravelLang\Dev\Processors;
 
 use LaravelLang\Dev\Services\Filesystem;
+use LaravelLang\LocaleList\Locale;
 use Symfony\Component\Console\Output\OutputInterface;
 
 abstract class Processor
@@ -46,6 +47,6 @@ abstract class Processor
 
     protected function locales(): array
     {
-        return $this->available ??= array_keys($this->load($this->sourceFile));
+        return $this->available ??= Locale::values();
     }
 }
