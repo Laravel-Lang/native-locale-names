@@ -21,10 +21,11 @@ use BackedEnum;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
 use LaravelLang\NativeLocaleNames\Helpers\Path;
+use LaravelLang\NativeLocaleNames\Services\Filesystem;
 
-class Native
+class LocaleNames
 {
-    protected static string $default = '_native';
+    public static string $default = '_native';
 
     public static function get(BackedEnum|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
     {
@@ -42,7 +43,7 @@ class Native
 
     protected static function load(string $path): array
     {
-        return Arr::file($path);
+        return Filesystem::load($path);
     }
 
     protected static function path(string $locale): bool|string

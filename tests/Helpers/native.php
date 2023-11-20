@@ -15,9 +15,10 @@
 
 declare(strict_types=1);
 
-use LaravelLang\NativeLocaleNames\Helpers\Arr;
+use LaravelLang\NativeLocaleNames\Helpers\Path;
+use LaravelLang\NativeLocaleNames\Services\Filesystem;
 
 function sourceLocale(string $locale): array
 {
-    return Arr::file(__DIR__ . '/../../locales/' . $locale . '/json.json');
+    return Filesystem::load(Path::resolve($locale));
 }

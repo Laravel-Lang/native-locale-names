@@ -15,10 +15,10 @@
 
 declare(strict_types=1);
 
-use LaravelLang\NativeLocaleNames\Native;
+use LaravelLang\NativeLocaleNames\LocaleNames;
 
 it('checks for a match using the locale string value', function (string $locale) {
-    expect(Native::get($locale))
+    expect(LocaleNames::get($locale))
         ->toBeSameCount()
         ->toBeLocale($locale)
         ->not->toBeEmpty();
