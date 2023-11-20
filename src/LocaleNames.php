@@ -27,7 +27,7 @@ class LocaleNames
 {
     public static string $default = '_native';
 
-    public static function get(BackedEnum|string|null $locale = null, SortBy $sortBy = SortBy::Value): array
+    public static function get(BackedEnum|string|null $locale = null, SortBy $sortBy = SortBy::None): array
     {
         if ($locale = static::locale($locale)) {
             return static::forLocale($locale, $sortBy);

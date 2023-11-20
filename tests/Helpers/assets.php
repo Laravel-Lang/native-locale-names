@@ -26,21 +26,12 @@ expect()->extend('toBeSameCount', function () {
     return $this;
 });
 
-expect()->extend('toBeLocale', function (Locale|string $locale, SortBy $sortBy = SortBy::Value) {
+expect()->extend('toBeLocale', function (Locale|string $locale, SortBy $sortBy = SortBy::None) {
     $values = Arr::sortBy(sourceLocale($locale->value ?? $locale), $sortBy);
 
     return $this->toBe($values);
 });
 
-expect()->extend('toBeCompileLocales', function (SortBy $sortBy = SortBy::Value) {
-    $result = [];
-
-    foreach (Locale::values() as $value) {
-        $result[$value] = sourceLocale($value)[$value];
-    }
-
-    $this->toBe(Arr::sortBy($result, $sortBy));
-
-    return $this;
-}
-);
+expect()->extend('toBeCompileLocales', function (SortBy $sortBy = SortBy::None) {
+    return $this->toBeLocale('_native', $sortBy);
+});
