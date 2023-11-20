@@ -19,9 +19,11 @@ namespace LaravelLang\NativeLocaleNames\Helpers;
 
 class Path
 {
-    public static function resolve(string $locale): bool|string
+    public static function resolve(string $locale, bool $real = true): bool|string
     {
-        return realpath(__DIR__ . '/../../locales/' . $locale . '/json.json');
+        $path = __DIR__ . '/../../data/' . $locale . '.json';
+
+        return $real ? realpath($path) : $path;
     }
 
     public static function exists(string $locale): bool

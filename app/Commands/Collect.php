@@ -21,7 +21,7 @@ use LaravelLang\Dev\Processors\Collect as CollectProcessor;
 
 class Collect extends Command
 {
-    protected string $info = 'Collecting a list of locale names in native forms';
+    protected string $info = 'Collection and preparation of data for use';
 
     protected string $processor = CollectProcessor::class;
 }

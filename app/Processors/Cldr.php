@@ -37,13 +37,13 @@ class Cldr extends Processor
     protected function toInstall(): string
     {
         return collect(parent::locales())
-            ->filter(fn (string $locale) => ! in_array($locale, $this->notSupported, true))
             ->map(fn (string $locale) => [
                 $locale,
                 Str::before($locale, '_'),
             ])
             ->flatten()
             ->unique()
+            ->filter(fn (string $locale) => ! in_array($locale, $this->notSupported, true))
             ->sort()
             ->map(fn (string $locale) => '+' . $locale)
             ->implode(',');
