@@ -19,6 +19,7 @@ namespace LaravelLang\NativeLocaleNames\Enums;
 
 enum SortBy: int
 {
-    case Key   = 0;
-    case Value = 1;
+    case None  = 0;
+    case Key   = 1;
+    case Value = 2;
 }

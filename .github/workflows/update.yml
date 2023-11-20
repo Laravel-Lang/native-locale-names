@@ -4,9 +4,6 @@ on:
     push:
         branches:
             - main
-    release:
-        types:
-            - released
 
 permissions: write-all
 
@@ -33,62 +30,20 @@ jobs:
             -   name: Install dependencies
                 run: composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
-            -   name: Adding missing locales
-                id: locales
+            -   name: Update data
+                id: data
                 if: success()
                 run: |
                     IS_DIRTY=1
 
-                    vendor/bin/lang create
-
-                    { git add . && git commit -a -m "✏️ Adding missing locales"; } || IS_DIRTY=0
-
-                    echo "is_dirty=${IS_DIRTY}" >> "$GITHUB_OUTPUT"
-
-            -   name: Keys actualization
-                id: keys
-                if: success()
-                run: |
-                    IS_DIRTY=1
-
-                    sudo php ./bin/native translate
                     sudo php ./bin/native collect
-                    vendor/bin/lang sync
 
-                    { git add . && git commit -a -m "🔑 Synchronization of translation keys"; } || IS_DIRTY=0
-
-                    echo "is_dirty=${IS_DIRTY}" >> "$GITHUB_OUTPUT"
-
-            -   name: Update status
-                id: status
-                if: success()
-                run: |
-                    IS_DIRTY=1
-
-                    vendor/bin/lang status
-
-                    { git add . && git commit -a -m "📃 Translation statuses have been updated"; } || IS_DIRTY=0
+                    { git add . && git commit -a -m "📦 Data updated"; } || IS_DIRTY=0
 
                     echo "is_dirty=${IS_DIRTY}" >> "$GITHUB_OUTPUT"
 
             -   name: Push changes
                 uses: ad-m/github-push-action@master
-                if: success() &&
-                    steps.locales.outputs.is_dirty == 1 ||
-                    steps.keys.outputs.is_dirty == 1 ||
-                    steps.status.outputs.is_dirty == 1
+                if: success() && steps.data.outputs.is_dirty == 1
                 with:
                     github_token: ${{ secrets.COMPOSER_TOKEN }}
-
-            -   name: Generate docs trigger
-                uses: myrotvorets/trigger-repository-dispatch-action@v2.0.0
-                if: |
-                    success() && (
-                    steps.locales.outputs.is_dirty == 1 ||
-                    steps.keys.outputs.is_dirty == 1 ||
-                    steps.status.outputs.is_dirty == 1
-                    )
-                with:
-                    token: ${{ secrets.COMPOSER_TOKEN }}
-                    repo: Laravel-Lang/common
-                    type: docs

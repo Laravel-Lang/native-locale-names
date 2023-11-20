@@ -17,18 +17,16 @@ declare(strict_types=1);
 
 namespace LaravelLang\NativeLocaleNames\Helpers;
 
-use DragonCode\Support\Facades\Helpers\Arr as DragonArray;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
 class Arr
 {
-    public static function file(string $path): array
+    public static function sortBy($array, SortBy $sortBy = SortBy::None): array
     {
-        return DragonArray::ofFile($path)->toArray();
-    }
+        if ($sortBy === SortBy::None) {
+            return $array;
+        }
 
-    public static function sortBy($array, SortBy $sortBy): array
-    {
         return $sortBy === SortBy::Key ? static::ksort($array) : static::sort($array);
     }
 

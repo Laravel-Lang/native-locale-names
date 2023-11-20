@@ -17,14 +17,13 @@ declare(strict_types=1);
 
 namespace LaravelLang\Dev\Processors;
 
-use LaravelLang\Dev\Services\Filesystem;
 use LaravelLang\LocaleList\Locale;
+use LaravelLang\NativeLocaleNames\Helpers\Path;
+use LaravelLang\NativeLocaleNames\Services\Filesystem;
 use Symfony\Component\Console\Output\OutputInterface;
 
 abstract class Processor
 {
-    protected string $sourceFile = __DIR__ . '/../../source/locales.json';
-
     protected ?array $available = null;
 
     abstract public function handle(): void;
@@ -33,16 +32,16 @@ abstract class Processor
         protected readonly OutputInterface $output
     ) {}
 
-    protected function load(string $path): array
-    {
-        return Filesystem::read($path);
-    }
-
-    protected function store(string $path, array $values): void
+    protected function store(string $locale, array $values): void
     {
         ksort($values);
 
-        Filesystem::store($path, $values);
+        Filesystem::store($this->resolvePath($locale), $values);
+    }
+
+    protected function resolvePath(string $locale): string
+    {
+        return Path::resolve($locale, false);
     }
 
     protected function locales(): array
