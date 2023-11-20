@@ -21,7 +21,7 @@ use LaravelLang\NativeLocaleNames\Enums\SortBy;
 
 class Arr
 {
-    public static function sortBy($array, SortBy $sortBy = SortBy::None): array
+    public static function sortBy($array, SortBy $sortBy): array
     {
         if ($sortBy === SortBy::None) {
             return $array;

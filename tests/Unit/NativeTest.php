@@ -15,12 +15,11 @@
 
 declare(strict_types=1);
 
-use LaravelLang\NativeLocaleNames\Helpers\Arr;
 use LaravelLang\NativeLocaleNames\LocaleNames;
 
 it('should not be a clone of the English version')
     ->expect(fn () => LocaleNames::get())
     ->toBeSameCount()
-    ->toBe(Arr::sort(sourceLocale('_native')))
-    ->not->toBe(Arr::sort(sourceLocale('en')))
+    ->toBe(sourceLocale('_native'))
+    ->not->toBe(sourceLocale('en'))
     ->not->toBeEmpty();
