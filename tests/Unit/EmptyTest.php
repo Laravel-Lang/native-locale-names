@@ -15,11 +15,11 @@
 
 declare(strict_types=1);
 
-use LaravelLang\NativeLocaleNames\Native;
+use LaravelLang\NativeLocaleNames\LocaleNames;
 
 it('checks for empty values being passed')
     ->with('locales-empty')
-    ->expect(fn (?string $locale) => Native::get($locale))
+    ->expect(fn (?string $locale) => LocaleNames::get($locale))
     ->toBeSameCount()
     ->toBeCompileLocales()
     ->not->toBeEmpty();

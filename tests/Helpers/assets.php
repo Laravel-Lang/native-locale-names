@@ -15,7 +15,7 @@
 
 declare(strict_types=1);
 
-use LaravelLang\Locales\Enums\Locale;
+use LaravelLang\LocaleList\Locale;
 use LaravelLang\NativeLocaleNames\Enums\SortBy;
 use LaravelLang\NativeLocaleNames\Helpers\Arr;
 use PHPUnit\Framework\Assert;
