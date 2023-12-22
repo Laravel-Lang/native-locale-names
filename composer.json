@@ -35,7 +35,7 @@
     },
     "require-dev": {
         "illuminate/support": "^10.31",
-        "laravel-lang/locale-list": "^1.1",
+        "laravel-lang/locale-list": "^1.2.1",
         "pestphp/pest": "^2.24.3",
         "punic/punic": "^3.8",
         "symfony/console": "^6.3",
