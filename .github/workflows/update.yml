@@ -36,7 +36,7 @@ jobs:
                 run: |
                     IS_DIRTY=1
 
-                    sudo php ./bin/native collect
+                    composer collect
 
                     { git add . && git commit -a -m "📦 Data updated"; } || IS_DIRTY=0
 
