@@ -76,6 +76,9 @@
         ],
         "cldr": [
             "php bin/native cldr"
+        ],
+        "test": [
+            "php vendor/bin/pest --parallel"
         ]
     }
 }
