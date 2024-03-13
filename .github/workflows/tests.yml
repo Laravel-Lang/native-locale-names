@@ -12,10 +12,12 @@ jobs:
             fail-fast: true
             matrix:
                 php: [ "8.1", "8.2", "8.3" ]
-                laravel: [ "10.0" ]
-                prefer: [ "stable", "lowest" ]
+                laravel: [ "10.0", "11.0" ]
+                exclude:
+                    - laravel: "11.0"
+                      php: "8.1"
 
-        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }} ${{ matrix.prefer }}
+        name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }}
 
         steps:
             -   name: Checkout code
@@ -29,7 +31,7 @@ jobs:
                     coverage: xdebug
 
             -   name: Install dependencies
-                run: composer require laravel/framework:^${{ matrix.laravel }} --prefer-${{ matrix.prefer }}
+                run: composer require laravel/framework:^${{ matrix.laravel }}
 
             -   name: Execute tests
                 run: php vendor/bin/pest --compact

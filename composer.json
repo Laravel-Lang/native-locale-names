@@ -34,7 +34,7 @@
         "dragon-code/support": "^6.11"
     },
     "require-dev": {
-        "illuminate/support": "^10.31",
+        "illuminate/support": "^10.31 || ^11.0",
         "laravel-lang/locale-list": "^1.2",
         "pestphp/pest": "^2.24.3",
         "punic/punic": "^3.8",
