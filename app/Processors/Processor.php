@@ -30,7 +30,8 @@ abstract class Processor
 
     public function __construct(
         protected readonly OutputInterface $output
-    ) {}
+    ) {
+    }
 
     protected function store(string $locale, array $values): void
     {
