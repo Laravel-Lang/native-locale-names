@@ -29,7 +29,7 @@ class Collect extends Processor
 
     public function __construct(
         OutputInterface $output,
-        protected CldrIntegration $cldr = new CldrIntegration()
+        protected CldrIntegration $cldr = new CldrIntegration
     ) {
         parent::__construct($output);
     }
