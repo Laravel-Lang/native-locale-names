@@ -32,7 +32,7 @@ class Process
         foreach ($process as $type => $data) {
             $process::OUT === $type
                 ? $output->writeln($data)
-                : $output->writeln('Error: '.$data);
+                : $output->writeln('Error: ' . $data);
         }
     }
 }
