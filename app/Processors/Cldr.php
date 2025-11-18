@@ -46,7 +46,7 @@ class Cldr extends Processor
             ))
             ->filter(fn (string $locale) => ! Str::contains($locale, ['-', '_']))
             ->sort()
-            ->map(fn (string $locale) => '+'.$locale)
+            ->map(fn (string $locale) => '+' . $locale)
             ->implode(',');
     }
 }
