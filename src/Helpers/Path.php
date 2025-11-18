@@ -21,7 +21,7 @@ class Path
 {
     public static function resolve(string $locale, bool $real = true): bool|string
     {
-        $path = __DIR__ . '/../../data/' . $locale . '.json';
+        $path = __DIR__.'/../../data/'.$locale.'.json';
 
         return $real ? realpath($path) : $path;
     }

@@ -34,6 +34,6 @@ class Filesystem
 
     public static function store(string $path, array $content): void
     {
-        File::store($path, json_encode($content, static::$flags) . PHP_EOL);
+        File::store($path, json_encode($content, static::$flags).PHP_EOL);
     }
 }
