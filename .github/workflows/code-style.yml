@@ -9,3 +9,5 @@ permissions: write-all
 jobs:
     Styler:
         uses: TheDragonCode/.github/.github/workflows/code-style.yml@main
+        with:
+            node: false
