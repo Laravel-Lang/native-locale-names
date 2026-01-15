@@ -1,6 +1,9 @@
 # Native Locale Names
 
-![laravel-lang native locale names](https://banners.beyondco.de/Native%20Locale%20Names.png?theme=light&packageManager=composer+require&packageName=laravel-lang%2Fnative-locale-names&pattern=topography&style=style_2&description=by+Laravel+Lang&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://banners.beyondco.de/Native%20Locale%20Names.png?theme=dark&pattern=topography&style=style_2&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&packageManager=composer+require&packageName=laravel-lang%2Fnative-locale-names&description=by+Laravel+Lang&md=1&showWatermark=1">
+    <img src="https://banners.beyondco.de/Native%20Locale%20Names.png?theme=light&pattern=topography&style=style_2&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg&packageManager=composer+require&packageName=laravel-lang%2Fnative-locale-names&description=by+Laravel+Lang&md=1&showWatermark=1" alt="Native Locale Names">
+</picture>
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Total Downloads][badge_downloads]][link_packagist]
