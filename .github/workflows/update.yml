@@ -13,45 +13,37 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            -   name: Checkout code
-                uses: actions/checkout@v6
+            -   uses: actions/checkout@v6
 
-            -   name: Setup PHP
-                uses: shivammathur/setup-php@v2
+            -   uses: shivammathur/setup-php@v2
                 with:
                     php-version: '8.4'
                     extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, json
                     coverage: none
 
-            -   name: Git setup
-                if: success()
-                run: |
-                    git config --local user.email "action@github.com"
-                    git config --local user.name "GitHub Action"
-
-            -   name: Install dependencies
+            -   name: Install Composer dependencies
                 run: composer update --prefer-stable --prefer-dist --no-progress --no-interaction
 
             -   name: Update data
                 id: data
-                if: success()
-                run: |
-                    IS_DIRTY=1
+                run: composer collect
 
-                    composer collect
-
-                    { git add . && git commit -a -m "📦 Data updated"; } || IS_DIRTY=0
-
-                    echo "is_dirty=${IS_DIRTY}" >> "$GITHUB_OUTPUT"
-
-            -   name: Fix the code style
-                uses: TheDragonCode/codestyler@v5
+            -   name: Create a Pull Request
+                uses: peter-evans/create-pull-request@v8
+                id: pullRequest
                 with:
-                    github_token: ${{ secrets.COMPOSER_TOKEN }}
-                    fix: true
+                    branch: projects/download
+                    branch-suffix: random
+                    delete-branch: true
+                    add-paths: ./data
+                    title: "[source]: Data updated"
+                    commit-message: 📦 Data updated
+                    body: 📦 Data updated
+                    labels: |
+                        source
 
-            -   name: Push changes
-                uses: ad-m/github-push-action@master
-                if: success() && steps.data.outputs.is_dirty == 1
-                with:
-                    github_token: ${{ secrets.COMPOSER_TOKEN }}
+            -   name: Merge PR
+                if: ${{ steps.pullRequest.outputs.pull-request-number }}
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: gh pr merge --merge --auto ${{ steps.pullRequest.outputs.pull-request-number }}
