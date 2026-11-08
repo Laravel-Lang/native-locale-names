@@ -17,6 +17,8 @@ declare(strict_types=1);
 
 namespace LaravelLang\NativeLocaleNames\Services;
 
+use RuntimeException;
+
 class Filesystem
 {
     protected static int $flags = JSON_UNESCAPED_UNICODE ^ JSON_UNESCAPED_SLASHES ^ JSON_PRETTY_PRINT;
@@ -34,10 +36,12 @@ class Filesystem
     {
         $directory = dirname($path);
 
-        if (! is_dir($directory)) {
-            mkdir($directory, 0o755, true);
+        if (! is_dir($directory) && ! @mkdir($directory, 0o755, true) && ! is_dir($directory)) {
+            throw new RuntimeException("Unable to create directory [$directory].");
         }
 
-        file_put_contents($path, json_encode($content, static::$flags) . PHP_EOL);
+        if (@file_put_contents($path, json_encode($content, static::$flags) . PHP_EOL) === false) {
+            throw new RuntimeException("Unable to write file [$path].");
+        }
     }
 }

@@ -18,15 +18,24 @@ declare(strict_types=1);
 use LaravelLang\NativeLocaleNames\Services\Filesystem;
 
 beforeEach(function () {
+    set_error_handler(static fn () => true, E_WARNING);
+
     $this->directory = sys_get_temp_dir() . '/native-locale-names-' . uniqid();
 });
 
 afterEach(function () {
-    $path = $this->directory . '/nested/foo.json';
+    $entries = [
+        $this->directory . '/nested/foo.json/bar.json',
+        $this->directory . '/nested/foo.json',
+        $this->directory . '/nested',
+        $this->directory,
+    ];
 
-    is_file($path)                       && unlink($path);
-    is_dir($this->directory . '/nested') && rmdir($this->directory . '/nested');
-    is_dir($this->directory)             && rmdir($this->directory);
+    foreach ($entries as $entry) {
+        is_dir($entry) ? rmdir($entry) : (is_file($entry) && unlink($entry));
+    }
+
+    restore_error_handler();
 });
 
 it('returns an empty array when the file or path is not a file', function () {
@@ -51,3 +60,16 @@ it('throws on invalid JSON', function () {
 
     Filesystem::load($path);
 })->throws(JsonException::class);
+
+it('throws when the destination cannot be written', function () {
+    mkdir($this->directory . '/nested/foo.json', 0o755, true);
+
+    Filesystem::store($this->directory . '/nested/foo.json', ['a' => 'b']);
+})->throws(RuntimeException::class, 'Unable to write file');
+
+it('throws when the directory cannot be created', function () {
+    mkdir($this->directory . '/nested', 0o755, true);
+    file_put_contents($this->directory . '/nested/foo.json', '');
+
+    Filesystem::store($this->directory . '/nested/foo.json/bar.json', ['a' => 'b']);
+})->throws(RuntimeException::class, 'Unable to create directory');
