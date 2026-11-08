@@ -24,9 +24,9 @@ beforeEach(function () {
 afterEach(function () {
     $path = $this->directory . '/nested/foo.json';
 
-    is_file($path) && unlink($path);
+    is_file($path)                       && unlink($path);
     is_dir($this->directory . '/nested') && rmdir($this->directory . '/nested');
-    is_dir($this->directory) && rmdir($this->directory);
+    is_dir($this->directory)             && rmdir($this->directory);
 });
 
 it('returns an empty array when the file or path is not a file', function () {
