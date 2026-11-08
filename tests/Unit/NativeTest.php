@@ -293,3 +293,16 @@ it('should check the returned list in Ukrainian')
         'zh_TW'      => 'Китайська (Тайвань)',
         'zu'         => 'Зулуська',
     ]);
+
+it('should contain native names instead of English fallbacks')
+    ->expect(fn () => LocaleNames::get())
+    ->toMatchArray([
+        'af'      => 'Afrikaans',
+        'ak'      => 'Akan',
+        'am'      => 'አማርኛ',
+        'az'      => 'Azərbaycan',
+        'ht'      => 'Créole Haïtien',
+        'sr_Latn' => 'Srpski',
+        'uz_Cyrl' => 'Ўзбекча',
+        'zu'      => 'Isizulu',
+    ]);
