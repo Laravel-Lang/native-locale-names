@@ -17,7 +17,7 @@ declare(strict_types=1);
 
 namespace LaravelLang\Dev\Processors;
 
-use DragonCode\Support\Facades\Helpers\Str;
+use Illuminate\Support\Str;
 use LaravelLang\Dev\Integrations\Cldr as CldrIntegration;
 use LaravelLang\LocaleList\Locale;
 use LaravelLang\NativeLocaleNames\LocaleNames;
