@@ -39,7 +39,7 @@ jobs:
                     coverage: xdebug
 
             -   name: Install dependencies
-                run: composer require laravel/framework:^${{ matrix.laravel }}
+                run: composer require --no-blocking laravel/framework:^${{ matrix.laravel }}
 
             -   name: Execute tests
                 run: php vendor/bin/pest --compact
