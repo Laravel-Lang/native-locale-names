@@ -23,8 +23,25 @@ use LaravelLang\Dev\Services\Process;
 
 class Cldr extends Processor
 {
+    /**
+     * Locales that Punic has no CLDR data for. Requesting any of them makes
+     * `punic-data` abort without installing anything.
+     */
     protected array $notSupported = [
         'tl',
+        'ht',
+    ];
+
+    /**
+     * Locales with a subtag that Punic does provide under the same name.
+     * They would otherwise be dropped by the `-`/`_` filter below, which
+     * exists because most other subtag locales (`zh_CN`, `pt_BR`, ...) are
+     * named differently in Punic (`zh_Hans_CN`, ...) and are unsupported.
+     */
+    protected array $withSubtag = [
+        'sr_Latn',
+        'sr_Latn_ME',
+        'uz_Cyrl',
     ];
 
     public function handle(): void
@@ -44,7 +61,7 @@ class Cldr extends Processor
             ->when($this->notSupported, fn (Collection $items, array $except) => $items->filter(
                 fn (string $locale) => ! in_array($locale, $except, true)
             ))
-            ->filter(fn (string $locale) => ! Str::contains($locale, ['-', '_']))
+            ->filter(fn (string $locale) => in_array($locale, $this->withSubtag, true) || ! Str::contains($locale, ['-', '_']))
             ->sort()
             ->map(fn (string $locale) => '+' . $locale)
             ->implode(',');

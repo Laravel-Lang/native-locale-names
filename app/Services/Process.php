@@ -17,6 +17,7 @@ declare(strict_types=1);
 
 namespace LaravelLang\Dev\Services;
 
+use RuntimeException;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Process\Process as SP;
 
@@ -33,6 +34,14 @@ class Process
             $process::OUT === $type
                 ? $output->writeln($data)
                 : $output->writeln('Error: ' . $data);
+        }
+
+        if (! $process->isSuccessful()) {
+            throw new RuntimeException(sprintf(
+                'The command "%s" failed with exit code %d',
+                $process->getCommandLine(),
+                $process->getExitCode()
+            ));
         }
     }
 }
